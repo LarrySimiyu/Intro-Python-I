@@ -3,19 +3,23 @@
 
 x = [1, 2, 3]
 y = [8, 9, 10]
+j = "hello"
 
 # For the following, DO NOT USE AN ASSIGNMENT (=).
 
 # Change x so that it is [1, 2, 3, 4]
 # YOUR CODE HERE 
 x.extend([4])
+x.extend([7])
 print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE 
 x.extend(y)
+y.extend(x)
 
 print(x)
+print(y)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE 
@@ -37,5 +41,5 @@ print(len(x))
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
 
-x[:] = [i * 1000 for i in x]
+x[:] = [i * 1000 for i in x] #study this
 print(x)
